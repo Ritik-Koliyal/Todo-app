@@ -3,12 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/Ritik-Koliyal/Todo-app.git",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+   
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "react": "^18.3.1",
